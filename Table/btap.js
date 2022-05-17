@@ -1,0 +1,31 @@
+const http = require('http')
+const fs = require('fs')
+
+const server = http.createServer((req, res) => {
+    fs.readFile("files/index.json", (err, data) => {
+        const base = JSON.parse(data)
+        res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' })
+        res.write('<html>')
+        res.write('<head>')
+        res.write('<title>Table</title>')
+        res.write('</head>')
+        res.write('<body>')
+        res.write('<table border="1">')
+        res.write('<tr>')
+        res.write('<tr>')
+        res.write('<tr>')
+        res.write('<th>name</th>')
+        base.map((el) => res.write(`<td>${el.name}</td>`))
+        res.write('</tr>')
+        res.write('<tr>')
+        res.write('<th>age</th>')
+        base.map((el) => res.write(`<td>${el.age}</td>`))
+        res.write('</tr>')
+        res.write('</table>')
+        res.write('<body>')
+        res.write('</html>')
+        res.end()
+    })
+})
+
+server.listen(1115, 'localhost');
