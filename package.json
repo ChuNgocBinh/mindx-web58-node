@@ -1,0 +1,26 @@
+{
+  "name": "mindx-web58-node",
+  "version": "1.0.0",
+  "description": "bài tập ",
+  "main": "huy",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChuNgocBinh/mindx-web58-node.git"
+  },
+  "keywords": [
+    "expressjs",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChuNgocBinh/mindx-web58-node/issues"
+  },
+  "homepage": "https://github.com/ChuNgocBinh/mindx-web58-node#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
