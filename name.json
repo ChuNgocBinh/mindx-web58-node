@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "name": "binh",
+        "avatar": "http://localhost:9000/public/img/Node.js-developer-roadmap.png"
+    },
+    {
+        "id": 2,
+        "name": "thai",
+        "avatar": "http://localhost:9000/public/img/roadmap.png"
+    }
+]
